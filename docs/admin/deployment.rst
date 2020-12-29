@@ -71,6 +71,7 @@ you create:
    Set to 'github' if you want to use 'GitHub' (corresponding GITHUB_* settings must be set).
    Set to 'gitlab' if you want to use 'GitLab' (corresponding GITLAB_* settings must be set if required).
    Set to 'google' if you want to use 'Google' (corresponding GOOGLE_* settings must be set).
+   Set to 'discord' if you want to use 'Discord' (corresponding DISCORD_* settings must be set).
 
 ``CELERY_ALWAYS_EAGER``
    Controls whether asynchronous tasks (mainly used during sync) are sent to
