@@ -28,7 +28,7 @@
           {% if settings.AUTHENTICATION_METHOD == 'django' %}
           <a href="{{ url('standalone_login') }}" class="button">Sign in</a>
           {% else %}
-          <a id="fxa-sign-in" href="{{ provider_login_url(request) }}" class="button">Sign in</a>
+          <a id="fxa-sign-in" href="{{ provider_login_url(request) }}" class="button"><i class="fab fa-discord fa-fw"></i> Sign in</a>
           {% endif %}
         </div>
         {% endif %}
@@ -39,10 +39,9 @@
             <ul>
               {{ Profile.top_menu() }}
 
-              <li><a href="{{ url('pontoon.terms') }}" rel="noopener noreferrer" target="_blank"><i class="fa fa-gavel fa-fw"></i>Terms of Use</a></li>
-              <li><a href="https://github.com/mozilla/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>Hack it on GitHub</a></li>
-              <li><a href="https://discourse.mozilla.org/c/pontoon" rel="noopener noreferrer" target="_blank"><i class="fa fa-comment-dots fa-fw"></i>Give Feedback</a></li>
-              <li><a href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fa fa-life-ring fa-fw"></i>Help</a></li>
+              <li><a href="https://discord.gg/HfVhP3S" rel="noopener noreferrer" target="_blank"><i class="fab fa-discord fa-fw"></i>DashboardX Discord</a></li>
+              <li><a href="https://steamcommunity.com/app/972390/" rel="noopener noreferrer" target="_blank"><i class="fab fa-steam fa-fw"></i>DashboardX Steam Community</a></li>
+              <li><a href="{{ url('pontoon.terms') }}" rel="noopener noreferrer" target="_blank"><i class="fa fa-gavel fa-fw"></i>Pontoon Terms of Use</a></li>
 
               {% if user.is_authenticated %}
               <li class="horizontal-separator"></li>

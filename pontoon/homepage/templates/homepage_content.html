@@ -3,15 +3,11 @@
 
   <!-- Section-1: Introduction -->
   <section id="section-1" class="section">
+    <div class="container" style="text-align: center; margin-bottom:25px;">
+        <h2>Now you can help translate DashboardX!</h2>
+    </div>
     <div class="container">
-      <h1>Welcome to Pontoon</h1>
-      <p>
-        Pontoon is a translation management system used and developed by
-        the Mozilla localization community. It specializes in open source localization
-        that is driven by the community and uses version-control systems
-        for storing translations.
-      </p>
-      <div class="flex">
+      <div class="flex" style="justify-content: center;">
         <a class="button primary" href="{{ start_url }}">Start Localizing Now</a>
         <span>or</span>
         <a class="button" href="{% url 'pontoon.translate.locale.agnostic' 'tutorial' 'playground' %}">Take a Tour</a>
@@ -21,8 +17,6 @@
       <a href="#section-2" class="scroll">Learn more</a>
     </div>
   </section>
-
-  <!-- Section-2: Add custom content here -->
 
   <!-- Section-3: Path to contribution -->
   <section id="section-3" class="section">
@@ -47,100 +41,8 @@
           </li>
         </ol>
       </div>
-    </div>
-  </section>
-
-  <!-- Section-4: Features -->
-  <section id="section-4" class="section">
-    <div class="container">
-      <div class="content-wrapper flex-col-2 flex-direction-col">
-        <h2>Things which make it special.</h2>
-        <p>
-          From the ground up, Pontoon has been designed as the tool
-          that brings all your team's localization tasks together in one place.
-          All the functionality and services you need are seamlessly integrated
-          into a single platform.
-        </p>
-      </div>
-      <div class="flex-col-2">
-        <div class="flex">
-          <div class="box">
-            <div class="box-image fas fa-cogs"></div>
-            <p>Machine translation</p>
-          </div>
-          <div class="box">
-            <div class="box-image fas fa-tasks"></div>
-            <p>Mass actions</p>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="box">
-            <div class="box-image fas fa-chart-line"></div>
-            <p>Localization dashboards</p>
-          </div>
-          <div class="box">
-            <div class="box-image far fa-clock"></div>
-            <p>Deadline and priority info</p>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="box">
-            <div class="box-image far fa-bell"></div>
-            <p>Notifications</p>
-          </div>
-          <div class="box">
-            <div class="box-image fas fa-sync"></div>
-            <p>Sync with Git and Mercurial</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section-5: In-context localization -->
-  <section id="section-5" class="section">
-    <div class="container">
-      <div class="content-wrapper flex-col-2 flex-direction-col">
-        <h2>One more thing.</h2>
-        <p>
-          One of the coolest features of Pontoon
-          is localizing web content in-place,
-          on the web page itself.
-          The moment you submit a translation,
-          it replaces the original text in the web page,
-          making you the first proofreader and tester.
-          Talk about context?
-        </p>
-        <a class="button primary" href="{% url 'pontoon.translate.locale.agnostic' 'pontoon-intro' 'messages.properties' %}">Try In-context Localization</a>
-      </div>
-      <div class="image-wrapper flex-col-2">
-        <img class="section-side-image-3" src="static/img/section-5.svg" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Section-6: Final -->
-  <section id="section-6" class="section">
-    <div class="container">
-      <div class="content-wrapper flex-direction-col">
-        <h2>Join us.</h2>
-        <p>Now that you know what Pontoon is, come on in!</p>
-        <a class="button primary" href="{{ start_url }}">Start Localizing Now</a>
-        <p>Want to learn more?</p>
-        <a class="button" href="{% url 'pontoon.translate.locale.agnostic' 'tutorial' 'playground' %}">Take a Tour</a>
-      </div>
-      <div class="footer flex">
-        <div class="flex-col-3 mozilla">
-          <a href="https://mozilla.org/">
-            <img class="logo" src="static/img/moz-logo.svg" />
-          </a>
-        </div>
-        <div class="flex-col-3 github">
-          <a href="https://github.com/mozilla/pontoon/">Hack it on Github</a>
-        </div>
-        <div class="flex-col-3 contact">
-          <a href="https://discourse.mozilla.org/c/pontoon">Give Feedback</a>
-        </div>
+      <div class="footer flex" style="position: absolute; bottom: 0; left: 0; right: 0; text-align: center;">
+             <p style="max-width: 700px; font-size: 13px; line-height: normal;">Pontoon is a translation management system used and developed by the Mozilla localization community. It specializes in open source localization that is driven by the community and uses version-control systems for storing translations.</p>
       </div>
     </div>
   </section>
